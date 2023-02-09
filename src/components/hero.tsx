@@ -114,7 +114,7 @@ export const Hero = () => {
             </div>
           </Dialog.Panel>
         </Dialog>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 h-screen">
           {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
               Announcing our next round of funding.{' '}
@@ -124,7 +124,7 @@ export const Hero = () => {
               </a>
             </div>
           </div> */}
-          <div className="text-center py-8">
+          <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Kismet Finance Group
             </h1>
