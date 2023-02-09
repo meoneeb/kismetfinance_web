@@ -74,7 +74,7 @@ Join the ranks of satisfied clients and take control of your financial future to
                   name="first-name"
                   id="first-name"
                   autoComplete="given-name"
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring-primary"
                 />
               </div>
             </div>
@@ -88,7 +88,7 @@ Join the ranks of satisfied clients and take control of your financial future to
                   name="last-name"
                   id="last-name"
                   autoComplete="family-name"
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring-primary"
                 />
               </div>
             </div>
@@ -102,7 +102,7 @@ Join the ranks of satisfied clients and take control of your financial future to
                   name="company"
                   id="company"
                   autoComplete="organization"
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring-primary"
                 />
               </div>
             </div>
@@ -116,7 +116,7 @@ Join the ranks of satisfied clients and take control of your financial future to
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring-primary"
                 />
               </div>
             </div>
@@ -132,7 +132,7 @@ Join the ranks of satisfied clients and take control of your financial future to
                   <select
                     id="country"
                     name="country"
-                    className="h-full rounded-md border-transparent bg-transparent py-0 pl-4 pr-8 text-gray-500 focus:border-indigo-500 focus:ring-indigo-500"
+                    className="h-full rounded-md border-transparent bg-transparent py-0 pl-4 pr-8 text-gray-500 focus:border-primary focus:ring-primary"
                   >
                     <option>AU</option>
                     <option>NZ</option>
@@ -143,7 +143,7 @@ Join the ranks of satisfied clients and take control of your financial future to
                   name="phone-number"
                   id="phone-number"
                   autoComplete="tel"
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 pl-20 focus:border-indigo-500 focus:ring-indigo-500"
+                  className="block w-full rounded-md border-gray-300 py-3 px-4 pl-20 focus:border-primary focus:ring-primary"
                   placeholder="+61 44 444 444"
                 />
               </div>
@@ -157,7 +157,7 @@ Join the ranks of satisfied clients and take control of your financial future to
                   id="message"
                   name="message"
                   rows={4}
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring-primary"
                   defaultValue={''}
                 />
               </div>
@@ -169,8 +169,8 @@ Join the ranks of satisfied clients and take control of your financial future to
                     checked={agreed}
                     onChange={setAgreed}
                     className={classNames(
-                      agreed ? 'bg-indigo-600' : 'bg-gray-200',
-                      'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                      agreed ? 'bg-primary' : 'bg-gray-200',
+                      'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2'
                     )}
                   >
                     <span className="sr-only">Agree to policies</span>
@@ -201,7 +201,7 @@ Join the ranks of satisfied clients and take control of your financial future to
             <div className="sm:col-span-2">
               <button
                 type="submit"
-                className="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                className="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               >
                 Let&apos;s talk
               </button>

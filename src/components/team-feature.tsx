@@ -47,7 +47,7 @@ export const TeamFeature = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div>
-            <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Everything you need</h2>
+            <h2 className="text-lg font-semibold leading-8 tracking-tight text-primary">Everything you need</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Team</p>
             <p className="mt-6 text-base leading-7 text-gray-600">
 Kismet&apos;s Partnership platform simplifies the process of getting the right help - offering access to full accredited and independent partners. Our mission is to make your journey as smooth and simple as possible. If you&apos;re already in a good financial situation and want to take the next step, we can explore various property investment strategies to get you closer to your goals
@@ -57,7 +57,7 @@ Kismet&apos;s Partnership platform simplifies the process of getting the right h
             {features.map((feature) => (
               <div key={feature.name} className="relative pl-9">
                 <dt className="font-semibold text-gray-900 ">
-                  <feature.icon className="absolute top-1 left-0 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <feature.icon className="absolute top-1 left-0 h-5 w-5 flex-none text-primary" aria-hidden="true" />
                   {feature.name}
                 </dt>
                 <dd className="mt-2">{feature.description}</dd>

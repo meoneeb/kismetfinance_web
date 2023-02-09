@@ -18,7 +18,7 @@ Contact us at Kismet Finance Group and let us guide you towards a brighter finan
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="#contact"
-              className="rounded-md bg-white px-3.5 py-1.5 text-base font-semibold leading-7 text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="rounded-md bg-primary px-3.5 py-1.5 text-base font-semibold leading-7 text-gray-900 shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Get started
             </a>
@@ -35,8 +35,8 @@ Contact us at Kismet Finance Group and let us guide you towards a brighter finan
         <circle cx={512} cy={512} r={512} fill="url(#8d958450-c69f-4251-94bc-4e091a323369)" fillOpacity="0.7" />
         <defs>
           <radialGradient id="8d958450-c69f-4251-94bc-4e091a323369">
-            <stop stopColor="#7775D6" />
-            <stop offset={1} stopColor="#E935C1" />
+              <stop stopColor="#00C2CB" />
+              <stop offset={1} stopColor="#4d71d6" />
           </radialGradient>
         </defs>
       </svg>

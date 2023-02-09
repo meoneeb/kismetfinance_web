@@ -43,20 +43,19 @@ export const Hero = () => {
               y2="474.645"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#9089FC" />
-              <stop offset={1} stopColor="#FF80B5" />
+              <stop stopColor="#00C2CB" />
+              <stop offset={1} stopColor="#4d71d6" />
             </linearGradient>
           </defs>
         </svg>
       </div>
-      <div className="px-6 lg:px-8">
-        <nav className="flex items-center justify-between pt-6" aria-label="Global">
+      <div className="  ">
+        <nav className="flex items-center justify-between pt-6 w-full  " aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-      {/* <Image src={logo}  alt="logo" className='bg-none'/> */}
 
-              <img className="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="" />
+              {/* <img className="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="" /> */}
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -114,7 +113,7 @@ export const Hero = () => {
             </div>
           </Dialog.Panel>
         </Dialog>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-72 ">
+        <div className="mx-auto max-w-2xl py-32 sm:py-44 lg:py-44 ">
           {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
               Announcing our next round of funding.{' '}
@@ -124,7 +123,10 @@ export const Hero = () => {
               </a>
             </div>
           </div> */}
-          <div className="text-center">
+              <Image src={logo}  alt="logo" className='h-48 w-48 bg-white  bg-opacity-80 rounded-lg mx-auto '/>
+
+
+          <div className="text-center mt-4">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Kismet Finance Group
             </h1>
@@ -134,7 +136,7 @@ export const Hero = () => {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-indigo-500 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                className="rounded-md bg-primary px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 Get started
               </a>
@@ -164,8 +166,8 @@ export const Hero = () => {
               y2="474.645"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#9089FC" />
-              <stop offset={1} stopColor="#FF80B5" />
+              <stop stopColor="#00C2CB" />
+              <stop offset={1} stopColor="#4d71d6" />
             </linearGradient>
           </defs>
         </svg>
