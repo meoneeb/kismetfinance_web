@@ -21,7 +21,7 @@ const Landing: NextPage = () => {
         <TeamFeature />
         <Testimonials />
         <Contact />
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </div>
   )
