@@ -1,21 +1,21 @@
 /* This example requires Tailwind CSS v3.0+ */
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import Image from 'next/image'
+import { useState } from "react";
+import { Dialog } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
-import logo from '../../public/logo.png'
+import logo from "../../public/logo.png";
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'About', href: '#about' },
-  { name: 'Services', href: '#services' },
-  { name: 'Calculator', href: '/calculator' },
-  { name: 'Contact Us', href: '#contact' },
-]
+  { name: "Home", href: "#" },
+  { name: "About", href: "#about" },
+  { name: "Services", href: "#services" },
+  { name: "Calculator", href: "/calculator" },
+  { name: "Contact Us", href: "#contact" },
+];
 
 export const Hero = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="relative isolate overflow-hidden bg-gray-900">
@@ -44,13 +44,16 @@ export const Hero = () => {
               gradientUnits="userSpaceOnUse"
             >
               <stop stopColor="#00C2CB" />
-              <stop offset={1} stopColor="#4d71d6" />
+              <stop offset={1} stopColor="bg-secondary" />
             </linearGradient>
           </defs>
         </svg>
       </div>
       <div className="  ">
-        <nav className="flex items-center justify-between pt-6 w-full  " aria-label="Global">
+        <nav
+          className="flex w-full items-center justify-between pt-6  "
+          aria-label="Global"
+        >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -70,21 +73,27 @@ export const Hero = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white">
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-sm font-semibold leading-6 text-white"
+              >
                 {item.name}
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-
-          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
         </nav>
         <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-          <Dialog.Panel  className="fixed inset-0 z-10 overflow-y-auto bg-gray-900 px-6 py-6 lg:hidden">
+          <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-gray-900 px-6 py-6 lg:hidden">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img className="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="" />
+                <img
+                  className="h-8"
+                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                  alt=""
+                />
               </a>
               <button
                 type="button"
@@ -108,7 +117,6 @@ export const Hero = () => {
                     </a>
                   ))}
                 </div>
-
               </div>
             </div>
           </Dialog.Panel>
@@ -123,24 +131,31 @@ export const Hero = () => {
               </a>
             </div>
           </div> */}
-              <Image src={logo}  alt="logo" className='h-48 w-48 bg-white  bg-opacity-80 rounded-lg mx-auto '/>
+          <Image
+            src={logo}
+            alt="logo"
+            className="mx-auto h-48 w-48  rounded-lg bg-white bg-opacity-80 "
+          />
 
-
-          <div className="text-center mt-4">
+          <div className="mt-4 text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Kismet Finance Group
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-                  How can we help
+              Collective cooperation is the catalyst for turning goals into
+              actuality.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
-                className="rounded-md bg-primary px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                href="#contact"
+                className="rounded-md bg-primary px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-secondary hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 Get started
               </a>
-              <a href="#contact" className="text-base font-semibold leading-7 text-white">
+              <a
+                href="#contact"
+                className="text-base font-semibold leading-7 text-white"
+              >
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
@@ -167,11 +182,11 @@ export const Hero = () => {
               gradientUnits="userSpaceOnUse"
             >
               <stop stopColor="#00C2CB" />
-              <stop offset={1} stopColor="#4d71d6" />
+              <stop offset={1} stopColor="bg-secondary" />
             </linearGradient>
           </defs>
         </svg>
       </div>
     </div>
-  )
-}
+  );
+};
