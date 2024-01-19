@@ -1,7 +1,6 @@
-            //<img className="h-12 w-auto" src="https://tailwindui.com/img/logos/workcation-logo-white.svg" alt="" />
-            //TODO: Add logo
+//<img className="h-12 w-auto" src="https://tailwindui.com/img/logos/workcation-logo-white.svg" alt="" />
+//TODO: Add logo
 export const Testimonials = () => {
-
   return (
     <div className="bg-white py-16 lg:py-24">
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
@@ -14,13 +13,14 @@ export const Testimonials = () => {
             />
           </div>
           <div className="relative lg:col-span-1">
-
             <blockquote className="mt-6 text-white">
               <p className="text-xl font-medium sm:text-2xl">
-&quot;Before becoming a registered client with Kismet we were not aware of all the options available to
-improve our financial situation, We were mainly interested in financial planning and refinancing our
-home loan, but didn&apos;t know where to start. We would highly recommend Kismet, they have been
-very professional and easy to reach at any time.&quot;
+                Before accessing Kismet's service platform, we were not aware of
+                all the options available to improve our financial situation. We
+                were mainly interested in growing our superannuation and
+                refinancing our home loan, but didn't know where to start. We
+                would highly recommend Kismet; they have been very professional
+                and easy to reach at any time.
               </p>
               <footer className="mt-6">
                 <p className="flex flex-col font-medium">
@@ -33,5 +33,5 @@ very professional and easy to reach at any time.&quot;
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
