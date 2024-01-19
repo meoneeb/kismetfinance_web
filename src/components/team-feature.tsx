@@ -8,39 +8,39 @@ const features = [
   {
     name: "Finance Specialist",
     description:
-      "Take a close look at your existing loan arrangements and consider restructuring your finances. This could save you thousands of dollars each year.",
+      "Finance Specialist Review your existing loan arrangements carefully and explore the possibility of restructuring your finances. This may lead to significant savings amounting to thousands of dollars annually.",
     icon: BsPiggyBank,
   },
   // { name: 'List view', description: 'Corporis asperiores ea nulla temporibus asperiores non tempore assumenda aut.' },
   {
     name: "Financial Planner",
     description:
-      "At Kismet Finance Group, we provide personalized financial planning and advice tailored to meet your individual needs and goals",
+      "Accountant Our firm collaborates with professionals to offer accounting insights for all, from the self-employed to business owners. Our partnered team is ready to provide the guidance you need to make the best financial decisions.",
     icon: GiChart,
   },
-  {
-    name: "Accountant",
-    description:
-      "At our firm, we offer Accounting insights for all, from the selfemployed to business owners. Our team is ready to provide the guidance you need to make the best financial decisions.",
-    icon: BsCalculator,
-  },
+  // {
+  //   name: "Accountant",
+  //   description:
+  //     "Property Specialists Achieve financial security through real estate and construction projects with the support of our affiliated experts.",
+  //   icon: BsCalculator,
+  // },
   {
     name: "Property Specialists",
     description:
-      "Creating financial security through real estate and construction projects.",
+      "Property Specialists Achieve financial security through real estate and construction projects with the support of our affiliated experts.",
 
     icon: GiHouse,
   },
   {
     name: "Quantity Surveyors",
     description:
-      "We can help you get the most out of the tax advantages available to you, both for properties you already own and any new properties you may acquire.",
+      "Quantity Surveyors Maximize the tax advantages available to you, both for properties you already own and any new properties you may acquire, with assistance from our partnered Quantity Surveyors.",
     icon: FaWpforms,
   },
   {
     name: "First Home Buyers",
     description:
-      "We can help you with managing your finances, finding the right house and land package that suits your needs, and making sure everything is in order for you to settle in your new home.",
+      "First Home Buyers Navigate the process of managing your finances, finding the right house and land package, and ensuring everything is in order for you to settle into your new home, all through our network of trusted partners at Kismet. Remember, at Kismet, we don't provide services directly; our partners do.",
     icon: FaHouseUser,
   },
   // {
