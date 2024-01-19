@@ -122,20 +122,6 @@ export const Hero = () => {
           </Dialog.Panel>
         </Dialog>
         <div className="mx-auto max-w-2xl py-32 sm:py-44 lg:py-44 ">
-          {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-              Announcing our next round of funding.{' '}
-              <a href="#" className="font-semibold text-white">
-                <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
-          </div> */}
-          {/* <Image
-            src={logo}
-            alt="logo"
-            className="mx-auto h-48 w-48  rounded-lg bg-white bg-opacity-80 "
-          /> */}
           <Image
             src="/kismet.svg"
             alt="Description"

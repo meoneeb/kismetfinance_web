@@ -15,10 +15,10 @@ export const Testimonials = () => {
           <div className="relative lg:col-span-1">
             <blockquote className="mt-6 text-white">
               <p className="text-xl font-medium sm:text-2xl">
-                Before accessing Kismet's service platform, we were not aware of
+                Before accessing Kismets service platform, we were not aware of
                 all the options available to improve our financial situation. We
                 were mainly interested in growing our superannuation and
-                refinancing our home loan, but didn't know where to start. We
+                refinancing our home loan, but didnt know where to start. We
                 would highly recommend Kismet; they have been very professional
                 and easy to reach at any time.
               </p>

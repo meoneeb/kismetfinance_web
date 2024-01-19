@@ -89,7 +89,7 @@ export const Contact = () => {
             financial future today. Contact us at Kismet Finance Group and let
             us guide you towards a brighter financial future with our
             customizable and reliable financial and wealth creation services.
-            Don't wait, make the smart choice now.
+            Dont wait, make the smart choice now.
           </p>
         </div>
         <div className="mt-12">
@@ -255,7 +255,7 @@ export const Contact = () => {
                 type="submit"
                 className="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-secondary hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               >
-                Let's talk
+                Lets talk
               </button>
             </div>
           </form>

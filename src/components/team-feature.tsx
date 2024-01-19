@@ -62,13 +62,12 @@ export const TeamFeature = () => {
               Our Team
             </p>
             <p className="mt-6 text-base leading-7 text-gray-600">
-              Kismet's Partnership platform simplifies the process of getting
-              the right help - offering access to full accredited and
-              independent partners. Our mission is to make your journey as
-              smooth and simple as possible. If you're already in a good
-              financial situation and want to take the next step, we can explore
-              various property investment strategies to get you closer to your
-              goals
+              Kismets Partnership platform simplifies the process of getting the
+              right help - offering access to full accredited and independent
+              partners. Our mission is to make your journey as smooth and simple
+              as possible. If youre already in a good financial situation and
+              want to take the next step, we can explore various property
+              investment strategies to get you closer to your goals
             </p>
           </div>
           <dl className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
