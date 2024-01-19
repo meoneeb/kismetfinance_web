@@ -3,6 +3,7 @@ import {
   PhoneIcon,
   DocumentTextIcon,
 } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -57,19 +58,19 @@ export const Footer = () => {
             <h2 className="text-2xl font-bold text-white sm:text-3xl sm:tracking-tight">
               Legal
             </h2>
-            <a
+            <Link
               href="/terms-and-conditions"
               className="mt-3 flex text-base text-white hover:text-gray-300"
             >
               <DocumentTextIcon className="h-6 w-6" aria-hidden="true" />
               Terms & Conditions
-            </a>
-            <a
+            </Link>
+            <Link
               href="/privacy-policy"
               className="mt-3 text-base text-white hover:text-gray-300"
             >
               Privacy Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>

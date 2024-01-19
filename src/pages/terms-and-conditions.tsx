@@ -13,18 +13,18 @@ const TermsAndConditions = () => {
           </h1>
           <p className="mb-4 text-gray-700">
             Kismet Finance Group offers property information and education to
-            clients, as well as an introductory "Discovery Session" and access
-            to our partnership platform, which features third-party
-            professionals and financial service providers (known as affiliates,
-            referral partners, or partners). Our website and marketing materials
-            display these partners, but please note that Kismet Finance Group
-            does not provide financial advice, products, or services. The
-            information we provide is general and factual, and does not consider
-            your personal or financial objectives. Therefore, it is not intended
-            as a recommendation or opinion on any financial product, nor should
-            it be relied upon as a substitute for professional advice. We
-            strongly recommend seeking your own independent, professional, and
-            legal advice before making any decisions related to your personal
+            clients, as well as an introductory Discovery Session and access to
+            our partnership platform, which features third-party professionals
+            and financial service providers (known as affiliates, referral
+            partners, or partners). Our website and marketing materials display
+            these partners, but please note that Kismet Finance Group does not
+            provide financial advice, products, or services. The information we
+            provide is general and factual, and does not consider your personal
+            or financial objectives. Therefore, it is not intended as a
+            recommendation or opinion on any financial product, nor should it be
+            relied upon as a substitute for professional advice. We strongly
+            recommend seeking your own independent, professional, and legal
+            advice before making any decisions related to your personal
             circumstances. Kismet Finance Group reserves the right to update or
             change the partners and their products and services displayed on our
             platform at any time. Please note that Home Loan Solutions,
