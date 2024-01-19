@@ -18,7 +18,7 @@ export const Hero = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900">
+    <div className="relative isolate min-h-screen overflow-hidden bg-gray-900">
       <img
         src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
         alt=""
@@ -56,7 +56,7 @@ export const Hero = () => {
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Kismet Finance</span>
 
               {/* <img className="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="" /> */}
             </a>
@@ -131,9 +131,16 @@ export const Hero = () => {
               </a>
             </div>
           </div> */}
-          <Image
+          {/* <Image
             src={logo}
             alt="logo"
+            className="mx-auto h-48 w-48  rounded-lg bg-white bg-opacity-80 "
+          /> */}
+          <Image
+            src="/kismet.svg"
+            alt="Description"
+            width={100}
+            height={100}
             className="mx-auto h-48 w-48  rounded-lg bg-white bg-opacity-80 "
           />
 
