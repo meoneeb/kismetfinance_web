@@ -1,17 +1,32 @@
-import { type AppType } from "next/dist/shared/lib/utils";
+import type { AppProps } from "next/app";
+import Head from "next/head";
 import "../styles/globals.css";
 import SiteHeader from "../commonComponents/header/SiteHeader";
 
-const MyApp: AppType = ({ Component, pageProps }) => {
+// Optional: DM Sans Font via next/font
+import { DM_Sans } from "next/font/google";
+import SiteFooter from "../commonComponents/footer/SiteFooter";
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+});
+
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <html lang="en">
-      <header>
+    <>
+      <Head>
+        <title>Kismet Finance</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Your trusted financial partner" />
+        <meta charSet="UTF-8" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className={dmSans.variable}>
         <SiteHeader />
-      </header>
-      <body className={""}>
         <Component {...pageProps} />
-      </body>
-    </html>
+        <SiteFooter />
+      </div>
+    </>
   );
 };
 

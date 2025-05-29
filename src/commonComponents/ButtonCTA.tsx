@@ -1,4 +1,5 @@
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface ButtonCTAProps {
   label?: string;
@@ -19,7 +20,7 @@ export default function ButtonCTA({
     >
       <div className="flex h-12 items-center">
         <div className="aspect-square w-12 bg-transparent p-3">
-          <ArrowRightIcon className="size-5 text-white" />
+          <FontAwesomeIcon icon={faArrowRight} className="size-5 text-white" />
         </div>
         <div className="flex h-full items-center px-4 font-medium text-white">
           {label}

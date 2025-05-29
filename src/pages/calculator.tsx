@@ -1,12 +1,16 @@
-import type { NextPage } from "next"
-import { Navbar } from "../components/navbar"
+import type { NextPage } from "next";
+// import { Navbar } from "../components/navbar";
 
 const Calculator: NextPage = () => {
-  return <div className="h-full w-full">
-    <Navbar />
-    <iframe src="https://www.washingtonbrown.com.au/public/static/external/" className="w-full h-screen border-none " ></iframe>
+  return (
+    <div className="h-screen w-full pt-20">
+      {/* <Navbar /> */}
+      <iframe
+        src="https://www.washingtonbrown.com.au/public/static/external/"
+        className="h-full w-full border-none "
+      ></iframe>
+    </div>
+  );
+};
 
-  </div>
-}
-
-export default Calculator
+export default Calculator;
