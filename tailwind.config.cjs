@@ -4,10 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#2779c8",
-        secondary: "#82afe0",
+        primary: "#1E3A5F", // "#2779c8",
+        secondary: "#D4AF37", // "#82afe0",
         // tailwind.config.js
-
+        goldRush: {
+          400: "#D4AF37",
+        },
         island: {
           50: "#f0f6f6",
           100: "#d1f0f6",

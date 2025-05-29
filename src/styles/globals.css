@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 /* redesign */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
+
+html {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+div.page-container {
+  @apply mx-auto w-full max-w-7xl px-4 md:px-6;
+}
+
+h1 {
+  @apply text-3xl font-bold tracking-tight md:text-5xl;
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+}
