@@ -102,7 +102,7 @@ export const Contact = () => {
             <div>
               <label
                 htmlFor="first-name"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-600"
               >
                 First name
               </label>
@@ -119,7 +119,7 @@ export const Contact = () => {
             <div>
               <label
                 htmlFor="last-name"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-600"
               >
                 Last name
               </label>
@@ -136,7 +136,7 @@ export const Contact = () => {
             <div className="sm:col-span-2">
               <label
                 htmlFor="company"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-600"
               >
                 Company
               </label>
@@ -153,7 +153,7 @@ export const Contact = () => {
             <div className="sm:col-span-2">
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-600"
               >
                 Email
               </label>
@@ -170,7 +170,7 @@ export const Contact = () => {
             <div className="sm:col-span-2">
               <label
                 htmlFor="phone-number"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-600"
               >
                 Phone Number
               </label>
@@ -201,7 +201,7 @@ export const Contact = () => {
             <div className="sm:col-span-2">
               <label
                 htmlFor="message"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-600"
               >
                 Message
               </label>
@@ -241,14 +241,14 @@ export const Contact = () => {
                     By selecting this, you agree to the{" "}
                     <Link
                       href="/privacy-policy"
-                      className="font-medium text-gray-700 underline"
+                      className="font-medium text-gray-600 underline"
                     >
                       Privacy Policy
                     </Link>{" "}
                     and{" "}
                     <Link
                       href="/terms-and-conditions"
-                      className="font-medium text-gray-700 underline"
+                      className="font-medium text-gray-600 underline"
                     >
                       Terms & Conditions
                     </Link>

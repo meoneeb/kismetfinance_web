@@ -3,7 +3,7 @@ export default function IntroSection() {
   return (
     <div className="w-full bg-white">
       <div className="page-container py-12">
-        <p className="mx-auto max-w-5xl text-center text-lg md:text-xl text-gray-700">
+        <p className="mx-auto max-w-5xl text-center text-lg md:text-xl text-gray-600">
           {intro}
         </p>
       </div>

@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
           <h2 className="mb-2 text-xl font-semibold text-gray-800">
             Kismet Finance Group ACN 665 148 390 and the Privacy Act 1988
           </h2>
-          <p className="mb-4 text-gray-700">
+          <p className="mb-4 text-gray-600">
             Statement on the Use of Your Personal Information Privacy Act 1988
             Kismet Finance Group ACN 665 148 390 collects information about you
             for the purpose you agree to in this privacy disclosure statement
@@ -25,7 +25,7 @@ const PrivacyPolicy = () => {
             from time to time.
           </p>
           <h2>We respect the privacy of your personal information.</h2>
-          <p className="mb-4 text-gray-700">
+          <p className="mb-4 text-gray-600">
             Kismet Finance Group will keep your personal information on file for
             the sole purpose of communicating with you about the services
             available to you through our partnership platform. Under the Privacy

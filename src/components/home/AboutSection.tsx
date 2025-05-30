@@ -16,7 +16,7 @@ export default function AboutSection() {
                 you make informed financial decisions
               </span>
             </h2>
-            <p className="text-gray-700">{text}</p>
+            <p className="text-gray-600">{text}</p>
           </div>
         </div>
       </div>

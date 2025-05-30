@@ -11,7 +11,7 @@ const TermsAndConditions = () => {
           <h1 className="mb-4 text-3xl font-bold text-gray-900">
             Terms and Conditions
           </h1>
-          <p className="mb-4 text-gray-700">
+          <p className="mb-4 text-gray-600">
             Kismet Finance Group offers property information and education to
             clients, as well as an introductory Discovery Session and access to
             our partnership platform, which features third-party professionals

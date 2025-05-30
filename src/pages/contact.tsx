@@ -1,9 +1,9 @@
-import AboutPage from "../components/about/AboutPage";
+import ContactPage from "../components/contact/ContactPage";
 
 export default function aboutPage() {
   return (
     <main>
-      <AboutPage />
+      <ContactPage />
     </main>
   );
 }
