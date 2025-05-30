@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ButtonCTA from "../../commonComponents/ButtonCTA";
 
 export default function HeroSection() {
@@ -8,7 +9,9 @@ export default function HeroSection() {
           Guiding Your Towards Smarter Financial Decisions with Strategic
           Connections
         </h1>
-        <ButtonCTA label="Explore Opportunites Today" />
+        <Link href={"/contact"} passHref>
+          <ButtonCTA label="Explore Opportunites Today" />
+        </Link>
       </div>
     </div>
   );

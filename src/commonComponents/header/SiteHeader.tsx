@@ -29,7 +29,7 @@ export default function SiteHeader() {
       >
         <div className="page-container flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="/">
+          <Link href="/" passHref>
             <Image
               src={options.siteLogo}
               alt={options.siteName}
@@ -42,7 +42,7 @@ export default function SiteHeader() {
           {/* Desktop Menu */}
           <nav className="hidden items-center gap-6 md:flex">
             {menu.map((item, idx) => (
-              <Link href={item.href} key={idx} className="text-white">
+              <Link href={item.href} key={idx} className="text-white" passHref>
                 {item.name}
               </Link>
             ))}
@@ -82,7 +82,7 @@ export default function SiteHeader() {
         <ul className="flex flex-col gap-4 p-4">
           {menu.map((item, idx) => (
             <li key={idx}>
-              <Link href={item.href} onClick={() => setIsOpen(false)}>
+              <Link href={item.href} onClick={() => setIsOpen(false)} passHref>
                 {item.name}
               </Link>
             </li>
