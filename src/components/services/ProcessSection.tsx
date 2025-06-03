@@ -39,34 +39,28 @@ export default function ProcessSection() {
   return (
     <div className="w-full bg-white">
       <div className="page-container py-12 max-w-7xl mx-auto">
-        <h2 className="mb-16 text-center text-[22px] font-semibold text-[#1f2c52]">
+        <h2 className="mb-8 text-center text-gray-900 text-2xl font-semibold">
           Process Overview
         </h2>
-        <div className="mx-auto flex flex-col gap-16 max-w-5xl">
+        <div className="mx-auto flex flex-col gap-8 max-w-5xl">
           {processOverview.map(({ title, desc, Icon }, idx) => (
             <div
               key={idx}
-              className={`flex items-center w-full ${
-                idx % 2 === 0 ? "justify-start" : "justify-end"
+              className={`flex w-full items-center gap-6 ${
+                idx % 2 === 0 ? "flex-col md:flex-row" : "flex-col md:flex-row-reverse"
               }`}
             >
-              {idx % 2 === 0 ? (
-                <>
-                  <Icon className="w-20 h-20 text-[#c9a537] flex-shrink-0" />
-                  <div className="ml-8 max-w-[480px]">
-                    <h3 className="mb-1 text-[#c9a537] text-lg font-semibold">{title}</h3>
-                    <p className="text-[#1f2c52] text-xs leading-tight">{desc}</p>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div className="mr-8 max-w-[480px] text-right">
-                    <h3 className="mb-1 text-[#c9a537] text-lg font-semibold">{title}</h3>
-                    <p className="text-[#1f2c52] text-xs leading-tight">{desc}</p>
-                  </div>
-                  <Icon className="w-20 h-20 text-[#c9a537] flex-shrink-0" />
-                </>
-              )}
+              {/* Icon */}
+              <Icon className="w-40 h-40 text-yellow-500 flex-shrink-0" />
+
+              {/* Vertical line */}
+              <div className="hidden md:block h-40 w-[1px] bg-gray-200"></div>
+
+              {/* Text content */}
+              <div className="flex flex-col md:px-6 max-w-[480px]">
+                <h3 className="text-yellow-500 text-xl font-semibold mb-2">{title}</h3>
+                <p className="text-gray-900 text-base leading-relaxed">{desc}</p>
+              </div>
             </div>
           ))}
         </div>
