@@ -96,7 +96,7 @@ export default function ServicesSection(): JSX.Element {
           ))}
         </div>
 
-        {/* Second row: 2 cards centered */}
+        {}
         <div className="flex justify-center gap-x-8 flex-wrap">
           {services.slice(3, 5).map((service, idx) => (
             <div
