@@ -7,7 +7,7 @@ export default function MissionVisionSection() {
   const vision = {
     title: "Vision",
     text: `Kismet Finance Group aims to empower individuals with the knowledge and connections necessary to make informed financial decisions by fostering a network of trustworthy financial specialists.`,
-    imgUrl: "https://i.ibb.co/zKKjZby/DSC01695.jpg",
+    imgUrl: "https://i.ibb.co/DfVY1700/DSC01664.jpg",
   };
 
   const SectionBlock = ({
