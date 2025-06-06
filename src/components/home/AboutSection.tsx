@@ -9,24 +9,26 @@ take the next step with confidence.`;
     <>
       {/* White background section */}
       <section className="w-full bg-white">
-        <div className="page-container flex flex-col-reverse md:flex-row items-center py-16 md:py-24 gap-12 md:gap-20">
+        <div className="page-container flex flex-col-reverse items-center gap-12 py-16 md:flex-row md:gap-20 md:py-24">
           {/* Left side: Single large image */}
-          <div className="w-full md:w-1/2 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+          <div className="w-full overflow-hidden rounded-xl shadow-xl transition-shadow duration-300 hover:shadow-2xl md:w-1/2">
             <img
               src="https://i.ibb.co/Q7jx9DVB/DSC01518.jpg"
               alt="Finance professional"
-              className="w-full h-auto object-cover"
+              className="h-auto w-full object-cover"
               loading="lazy"
             />
           </div>
 
           {/* Right side: Text content */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center">
-            <h2 className="mb-6 text-primary text-4xl font-extrabold leading-tight tracking-tight">
+          <div className="flex w-full flex-col justify-center md:w-1/2">
+            <h2 className="mb-6 text-4xl font-extrabold leading-tight tracking-tight text-primary">
               Connecting you with trusted professionals to help{" "}
-              <span className="text-secondary">you make informed financial decisions</span>
+              <span className="text-secondary">
+                you make informed financial decisions
+              </span>
             </h2>
-            <p className="text-gray-700 text-lg leading-relaxed max-w-lg">
+            <p className="max-w-lg text-lg leading-relaxed text-gray-700">
               {text}
             </p>
           </div>
@@ -34,9 +36,26 @@ take the next step with confidence.`;
       </section>
 
       {/* Colored background section */}
-      <section className="w-full bg-primary">
+      <section
+        className="h-[60vh] w-full overflow-hidden"
+        style={{
+          backgroundImage: `
+      linear-gradient(
+        to right,
+        rgba(30,58,95, 1) 0%,
+        rgba(30,58,95, 0.7) 50%,
+        rgba(30,58,95, 0.4) 100%,
+        transparent 100%
+      ),
+      url('/images/DSC01741.webp')
+    `,
+          backgroundSize: "cover",
+          backgroundPosition: "right center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="page-container py-24 text-center md:text-left">
-          <h2 className="text-white max-w-3xl mx-auto md:mx-0 text-2xl md:text-3xl font-semibold leading-snug tracking-wide">
+          <h2 className="relative z-10 mx-auto max-w-3xl font-semibold leading-snug tracking-tight text-white md:mx-0">
             We specialize in aligning individuals with vetted professionals who
             can offer support tailored to their needs. Every connection is made
             with care, ensuring you are introduced to the right people to
