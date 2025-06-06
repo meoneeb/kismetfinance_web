@@ -52,7 +52,7 @@ export const menu = [
     name: "Services",
     href: "/services",
   },
-  { name: "Calculate", href: "/calculator" },
+  { name: "Calculator", href: "/calculator" },
   {
     name: "Contact",
     href: "/contact",
