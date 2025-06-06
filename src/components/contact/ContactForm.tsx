@@ -101,15 +101,8 @@ export default function ContactForm() {
             .
           </Label>
         </Field>
-        <button type="submit"></button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
 }
-
-const inputs = [
-  { type: "text", name: "name", required: true },
-  { type: "email", name: "email", required: true },
-  { type: "tel", name: "phone", required: true },
-  { type: "textarea", name: "name", required: true },
-];

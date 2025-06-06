@@ -59,7 +59,6 @@ const Arrow = ({
       }`}
       style={{ transform: "translateY(-50%)" }}
     >
-      
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-5 w-5 text-white"
@@ -84,7 +83,7 @@ const Arrow = ({
 
 export default function ReviewsSection() {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -104,27 +103,26 @@ export default function ReviewsSection() {
   };
 
   return (
-    <section className="relative mx-auto max-w-7xl overflow-visible bg-[#f6f6f6] py-16 px-16">
-      <h2 className="text-center text-gray-900 mb-12">
-        Client Testimonials
-      </h2>
+    <section className="w-full overflow-x-hidden bg-zinc-50">
+      <div className="page-container py-12">
+        <h2 className="mb-12 text-center text-gray-900">Client Testimonials</h2>
 
-      <Slider {...settings} className="relative">
-        {reviews.map((review, idx) => (
-          <article
-            key={idx}
-            className="flex flex-shrink-0 flex-col rounded-md border border-zinc-300 bg-white p-8"
-          >
-            <h3 className="mb-1 text-center text-lg font-semibold text-gray-900">
-              {review.name}
-            </h3>
-            <StarRating rating={review.rating} />
-            <p className="text-center  text-sm leading-relaxed text-gray-600">
-              {review.text}
-            </p>
-          </article>
-        ))}
-      </Slider>
+        <Slider {...settings} className="relative">
+          {reviews.map((review, idx) => (
+            <div key={idx} className="px-2">
+              <div className="flex flex-shrink-0 flex-col rounded-md border border-zinc-300 bg-white p-8">
+                <h3 className="mb-1 text-center text-lg font-semibold text-gray-900">
+                  {review.name}
+                </h3>
+                <StarRating rating={review.rating} />
+                <p className="line-clamp-3  text-center text-sm leading-relaxed text-gray-600">
+                  {review.text}
+                </p>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </section>
   );
 }

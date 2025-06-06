@@ -39,3 +39,11 @@ h3 {
 .style-label {
   @apply mb-2 block font-medium tracking-tight text-gray-900;
 }
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

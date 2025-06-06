@@ -1,4 +1,8 @@
-import React, { ForwardRefExoticComponent, SVGProps, RefAttributes } from "react";
+import React, {
+  ForwardRefExoticComponent,
+  SVGProps,
+  RefAttributes,
+} from "react";
 import {
   ChatBubbleLeftRightIcon,
   MagnifyingGlassCircleIcon,
@@ -9,7 +13,9 @@ import {
 interface ProcessItem {
   title: string;
   desc: string;
-  Icon: ForwardRefExoticComponent<SVGProps<SVGSVGElement> & RefAttributes<SVGSVGElement>>;
+  Icon: ForwardRefExoticComponent<
+    SVGProps<SVGSVGElement> & RefAttributes<SVGSVGElement>
+  >;
 }
 
 const processOverview: ProcessItem[] = [
@@ -38,28 +44,28 @@ const processOverview: ProcessItem[] = [
 export default function ProcessSection() {
   return (
     <div className="w-full bg-white">
-      <div className="page-container py-12 max-w-7xl mx-auto">
-        <h2 className="mb-8 text-center text-gray-900 text-2xl font-semibold">
-          Process Overview
-        </h2>
-        <div className="mx-auto flex flex-col gap-8 max-w-5xl">
+      <div className="page-container mx-auto max-w-7xl py-12">
+        <h2 className="mb-12 text-center text-gray-900">Process Overview</h2>
+        <div className="mx-auto flex max-w-5xl flex-col gap-8">
           {processOverview.map(({ title, desc, Icon }, idx) => (
             <div
               key={idx}
               className={`flex w-full items-center gap-6 ${
-                idx % 2 === 0 ? "flex-col md:flex-row" : "flex-col md:flex-row-reverse"
+                idx % 2 === 0
+                  ? "flex-col md:flex-row"
+                  : "flex-col md:flex-row-reverse"
               }`}
             >
               {/* Icon */}
-              <Icon className="w-40 h-40 text-yellow-500 flex-shrink-0" />
+              <Icon className="h-24 w-24 flex-shrink-0 text-secondary" />
 
               {/* Vertical line */}
-              <div className="hidden md:block h-40 w-[1px] bg-gray-200"></div>
+              <div className="hidden h-40 w-[1px] bg-gray-200 md:block"></div>
 
               {/* Text content */}
-              <div className="flex flex-col md:px-6 max-w-[480px]">
-                <h3 className="text-yellow-500 text-xl font-semibold mb-2">{title}</h3>
-                <p className="text-gray-900 text-base leading-relaxed">{desc}</p>
+              <div className="flex max-w-[480px] flex-col md:px-6">
+                <h3 className="mb-2 text-gray-900">{title}</h3>
+                <p className="leading-relaxed text-gray-600">{desc}</p>
               </div>
             </div>
           ))}

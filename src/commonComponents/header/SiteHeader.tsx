@@ -6,10 +6,12 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { menu, options } from "../../db/options";
+import { usePathname } from "next/navigation";
 
 export default function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const path = usePathname();
 
   useEffect(() => {
     const onScroll = () => {
@@ -24,7 +26,11 @@ export default function SiteHeader() {
       {/* Header */}
       <header
         className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 ${
-          scrolled ? "bg-primary" : "bg-primary/95"
+          path === "calculator"
+            ? "bg-primary"
+            : scrolled
+            ? "bg-primary"
+            : "bg-primary/95"
         }`}
       >
         <div className="page-container flex h-20 items-center justify-between">
