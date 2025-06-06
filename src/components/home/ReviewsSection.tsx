@@ -6,30 +6,32 @@ const reviews = [
   {
     name: "Adam Walker",
     rating: 5,
-    text:
-      "A friend of mine referred us to Kismet to help us out with our interest rates. The process was nice and convenient, we had one of the fellas come out to our place and then we were visited by one of their Senior Specialists who also showed us some other strategies, me being FIFO and paying so much tax was a killer but Dan showed us some ways to tax minimise and helped with those interest rates... Cheers guys, you’re all really a good bunch of people! Looking forward to our next catch up.",
+    text: "A friend of mine referred us to Kismet to help us out with our interest rates. The process was nice and convenient, we had one of the fellas come out to our place and then we were visited by one of their Senior Specialists who also showed us some other strategies, me being FIFO and paying so much tax was a killer but Dan showed us some ways to tax minimise and helped with those interest rates... Cheers guys, you’re all really a good bunch of people! Looking forward to our next catch up.",
   },
   {
     name: "Riley-James Hogg",
-    rating: 5,
-    text:
-      "I can not thank the team at Kismet enough for all their help. You have all been so supportive and have made me feel like a person and not a number lost in a system. Im not overly financially savvy but they have been there every step of the way. I wish there were more than 5 stars! Thanks again.",
+    rating: 3.7,
+    text: "I can not thank the team at Kismet enough for all their help. You have all been so supportive and have made me feel like a person and not a number lost in a system. Im not overly financially savvy but they have been there every step of the way. I wish there were more than 5 stars! Thanks again.",
   },
   {
     name: "Robyn Willers",
     rating: 5,
-    text:
-      "I honestly wish someone like Dan was around years ago to help educate the public about superannuation. He is very informative, patient and clearly outlines investment goals and procedures. My Self Managed Super Fund is actually working productively and I am very comfortable with my future retirement plans. Kismet has great customer service with regular check ups to ensure you understand that everything is ok and on track. I highly recommend the team Dan, Josh, Shane and Stuart to anyone who is seeking knowledgeable, experienced and trustworthy advisors to help plan and manage your financial future. It's a 5 star review and big thumbs up from me *****👍",
+    text: "I honestly wish someone like Dan was around years ago to help educate the public about superannuation. He is very informative, patient and clearly outlines investment goals and procedures. My Self Managed Super Fund is actually working productively and I am very comfortable with my future retirement plans. Kismet has great customer service with regular check ups to ensure you understand that everything is ok and on track. I highly recommend the team Dan, Josh, Shane and Stuart to anyone who is seeking knowledgeable, experienced and trustworthy advisors to help plan and manage your financial future. It's a 5 star review and big thumbs up from me *****👍",
   },
 ];
 
 function StarRating({ rating }: { rating: number }) {
   return (
-    <div className="flex justify-center gap-0 mb-3" aria-label={`${rating} out of 5 stars`}>
+    <div
+      className="mb-3 flex justify-center gap-0"
+      aria-label={`${rating} out of 5 stars`}
+    >
       {[...Array(5)].map((_, i) => (
         <svg
           key={i}
-          className={`w-5 h-5 ${i < rating ? "text-[#c49c2c]" : "text-gray-300"}`}
+          className={`h-5 w-5 ${
+            i < rating ? "text-yellow-400" : "text-gray-300"
+          }`}
           fill="currentColor"
           viewBox="0 0 20 20"
           aria-hidden="true"
@@ -41,26 +43,37 @@ function StarRating({ rating }: { rating: number }) {
   );
 }
 
-const Arrow = ({ direction, onClick }: { direction: "left" | "right"; onClick?: () => void }) => {
+const Arrow = ({
+  direction,
+  onClick,
+}: {
+  direction: "left" | "right";
+  onClick?: () => void;
+}) => {
   return (
     <button
       onClick={onClick}
       aria-label={direction === "left" ? "Previous review" : "Next review"}
-      className={`absolute top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-sm bg-[#c49c2c] flex items-center justify-center shadow-md hover:bg-[#b18f1f] transition-colors ${
+      className={`absolute top-1/2 z-30 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-sm bg-[#c49c2c] shadow-md transition-colors hover:bg-[#b18f1f] ${
         direction === "left" ? "-left-14" : "-right-14"
       }`}
       style={{ transform: "translateY(-50%)" }}
     >
+      
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="w-5 h-5 text-white"
+        className="h-5 w-5 text-white"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
         strokeWidth={2}
       >
         {direction === "left" ? (
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15 19l-7-7 7-7"
+          />
         ) : (
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         )}
@@ -91,18 +104,24 @@ export default function ReviewsSection() {
   };
 
   return (
-    <section className="bg-[#f6f6f6] py-16 px-16 max-w-7xl mx-auto relative overflow-visible">
-      <h2 className="text-3xl font-semibold text-center text-[#c49c2c] mb-16">Client Testimonials</h2>
+    <section className="relative mx-auto max-w-7xl overflow-visible bg-[#f6f6f6] py-16 px-16">
+      <h2 className="text-center text-gray-900 mb-12">
+        Client Testimonials
+      </h2>
 
       <Slider {...settings} className="relative">
         {reviews.map((review, idx) => (
           <article
             key={idx}
-            className="border border-[#c49c2c] rounded-md bg-white p-8 flex-shrink-0 w-[320px] min-h-[370px] flex flex-col"
+            className="flex flex-shrink-0 flex-col rounded-md border border-zinc-300 bg-white p-8"
           >
-            <h3 className="text-lg font-semibold text-[#c49c2c] mb-1 text-center">{review.name}</h3>
+            <h3 className="mb-1 text-center text-lg font-semibold text-gray-900">
+              {review.name}
+            </h3>
             <StarRating rating={review.rating} />
-            <p className="text-[#152d51] text-sm leading-relaxed text-left">{review.text}</p>
+            <p className="text-center  text-sm leading-relaxed text-gray-600">
+              {review.text}
+            </p>
           </article>
         ))}
       </Slider>
