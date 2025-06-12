@@ -31,19 +31,11 @@ export default function SiteHeader() {
           {/* Logo */}
           <Link href="/" passHref>
             <Image
-<<<<<<< HEAD
-              src={options.siteLogo}
+              src={options.siteLogoSquare}  // <- you can switch to `options.siteLogo` if preferred
               alt={options.siteName}
               height={60}
               width={180}
-              className="h-auto w-[180px]"
-=======
-              src={options.siteLogoSquare}
-              alt={options.siteName}
-              height={60}
-              width={180}
-              className="h-auto w-[130px]"
->>>>>>> 04983d8 (Initial commit with updated logo and layout redesign)
+              className="h-auto w-[130px]"  // <- change width if needed
             />
           </Link>
 
