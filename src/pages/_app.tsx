@@ -4,11 +4,17 @@ import "../styles/globals.css";
 import SiteHeader from "../commonComponents/header/SiteHeader";
 
 // Optional: DM Sans Font via next/font
-import { DM_Sans } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import SiteFooter from "../commonComponents/footer/SiteFooter";
-const dmSans = DM_Sans({
+// const dmSans = DM_Sans({
+//   subsets: ["latin"],
+//   variable: "--font-dm-sans",
+// });
+
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-dm-sans",
+  variable: "--font-montserrat",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
@@ -21,7 +27,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <meta charSet="UTF-8" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={dmSans.variable}>
+      <div className={montserrat.variable}>
         <SiteHeader />
         <Component {...pageProps} />
         <SiteFooter />

@@ -8,7 +8,7 @@ module.exports = {
       },
       colors: {
         primary: "#1E3A5F", // "#2779c8",
-        secondary: "#D4AF37", // "#82afe0",
+        secondary: "#CFA836", // "#D4AF37", // "#82afe0",
         goldRush: {
           400: "#D4AF37",
         },

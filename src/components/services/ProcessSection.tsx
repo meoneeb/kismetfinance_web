@@ -39,7 +39,7 @@ export default function ProcessSection() {
   return (
     <div className="w-full bg-zinc-100">
       <div className="page-container py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="mb-16 text-center text-2xl sm:text-3xl font-semibold text-[#0f2b4e]">
+        <h2 className="mb-16 text-center text-2xl sm:text-3xl font-semibold text-primary">
           Process Overview
         </h2>
 
@@ -47,10 +47,10 @@ export default function ProcessSection() {
           {processOverview.map(({ title, desc, Icon }, idx) => (
             <div
               key={idx}
-              className="flex flex-col items-center text-center bg-[#0f2b4e] text-white rounded-lg shadow-lg p-8"
+              className="flex flex-col items-center text-center bg-primary text-white rounded-lg shadow-lg p-8"
             >
-              <Icon className="w-16 h-16 text-[#b59d2d] mb-4" />
-              <h3 className="text-[#b59d2d] text-xl font-semibold mb-2">
+              <Icon className="w-16 h-16 text-secondary mb-4" />
+              <h3 className="text-secondary text-xl font-semibold mb-2">
                 {title}
               </h3>
               <p className="text-sm sm:text-base leading-relaxed">{desc}</p>

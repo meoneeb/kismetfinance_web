@@ -65,7 +65,7 @@ export default function ServicesSection(): JSX.Element {
           {services.slice(0, 3).map((service, idx) => (
             <div
               key={idx}
-              className="flex w-full flex-col overflow-hidden rounded-md bg-[#0f2b4e] shadow-lg sm:w-[30%]"
+              className="flex w-full flex-col overflow-hidden rounded-md bg-primary shadow-lg sm:w-[30%]"
             >
               <img
                 src={service.img}
@@ -74,7 +74,7 @@ export default function ServicesSection(): JSX.Element {
                 style={{ maxHeight: "200px" }}
               />
               <div className="flex flex-grow flex-col justify-between p-6">
-                <h3 className="mb-4 text-center text-lg font-semibold text-[#b59d2d] sm:text-xl">
+                <h3 className="mb-4 text-center text-lg font-semibold text-secondary sm:text-xl">
                   {service.title}
                 </h3>
                 <p className="mb-6 text-center text-sm leading-relaxed text-white sm:text-base">
@@ -82,7 +82,7 @@ export default function ServicesSection(): JSX.Element {
                 </p>
                 <button
                   onClick={() => openIframe(service.iframeSrc)}
-                  className="mx-auto rounded border border-[#b59d2d] px-8 py-1.5 text-sm font-medium text-[#b59d2d] transition-colors duration-300 hover:bg-[#b59d2d] hover:text-white"
+                  className="mx-auto rounded border border-secondary px-8 py-1.5 text-sm font-medium text-secondary transition-colors duration-300 hover:bg-secondary hover:text-white"
                 >
                   Learn More
                 </button>
@@ -96,7 +96,7 @@ export default function ServicesSection(): JSX.Element {
           {services.slice(3, 5).map((service, idx) => (
             <div
               key={idx}
-              className="mb-8 flex w-full flex-col overflow-hidden rounded-md bg-[#0f2b4e] shadow-lg sm:mb-0 sm:w-[40%]"
+              className="mb-8 flex w-full flex-col overflow-hidden rounded-md bg-primary shadow-lg sm:mb-0 sm:w-[40%]"
             >
               <img
                 src={service.img}
@@ -105,7 +105,7 @@ export default function ServicesSection(): JSX.Element {
                 style={{ maxHeight: "200px" }}
               />
               <div className="flex flex-grow flex-col justify-between p-6">
-                <h3 className="mb-4 text-center text-lg font-semibold text-[#b59d2d] sm:text-xl">
+                <h3 className="mb-4 text-center text-lg font-semibold text-secondary sm:text-xl">
                   {service.title}
                 </h3>
                 <p className="mb-6 text-center text-sm leading-relaxed text-white sm:text-base">
@@ -113,7 +113,7 @@ export default function ServicesSection(): JSX.Element {
                 </p>
                 <button
                   onClick={() => openIframe(service.iframeSrc)}
-                  className="mx-auto rounded border border-[#b59d2d] px-8 py-1.5 text-sm font-medium text-[#b59d2d] transition-colors duration-300 hover:bg-[#b59d2d] hover:text-white"
+                  className="mx-auto rounded border border-secondary px-8 py-1.5 text-sm font-medium text-secondary transition-colors duration-300 hover:bg-secondary hover:text-white"
                 >
                   Learn More
                 </button>
