@@ -24,12 +24,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.49.3",
-<<<<<<< HEAD
-=======
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.2.8",
->>>>>>> 04983d8 (Initial commit with updated logo and layout redesign)
     "zod": "^3.18.0"
   },
   "devDependencies": {
@@ -37,10 +34,7 @@
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
-<<<<<<< HEAD
-=======
     "@types/react-slick": "^0.23.13",
->>>>>>> 04983d8 (Initial commit with updated logo and layout redesign)
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
     "autoprefixer": "^10.4.7",
