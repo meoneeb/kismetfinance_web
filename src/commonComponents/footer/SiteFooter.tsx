@@ -6,10 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function SiteFooter() {
   const disclaimer =
     "Kismet Finance Group connects Australians with licensed professionals tailored to their needs. We do not provide financial, legal, or tax services directly. Our Service is referral-based, and we do not charge clients. We encourage clients to seek professional guidance before making financial decisions.";
-<<<<<<< HEAD
-=======
-
->>>>>>> 04983d8 (Initial commit with updated logo and layout redesign)
   return (
     <div className="w-full bg-primary">
       <div className="page-container flex flex-col items-center py-12 md:flex-row">
@@ -25,28 +21,14 @@ export default function SiteFooter() {
               <p className="mb-2 text-center text-lg font-semibold tracking-tight text-white md:text-left">
                 Contact us
               </p>
-<<<<<<< HEAD
-              <div className="mx-auto flex flex flex-1 flex-col gap-2 md:flex-row md:gap-4">
-                {contact.map((item, idx) => (
-                  <Link
-                    href={"/"}
-=======
+
               <div className="mx-auto flex flex-1 flex-col gap-2 md:flex-row md:gap-4">
                 {contact.map((item, idx) => (
-                  <Link
-                    href="/"
->>>>>>> 04983d8 (Initial commit with updated logo and layout redesign)
-                    key={idx}
-                    className="flex w-fit flex-1 gap-2"
-                  >
+                  <Link href="/" key={idx} className="flex w-fit flex-1 gap-2">
                     <FontAwesomeIcon
                       icon={item.icon}
                       className="mt-1 text-secondary"
                     />
-<<<<<<< HEAD
-
-=======
->>>>>>> 04983d8 (Initial commit with updated logo and layout redesign)
                     <p className="text-white">{item.value}</p>
                   </Link>
                 ))}
@@ -71,14 +53,10 @@ export default function SiteFooter() {
           <p className="mb-4 text-center text-sm font-light text-white md:text-left">
             {disclaimer}
           </p>
-<<<<<<< HEAD
-          <p className="text-center text-sm  text-white md:text-left">
+
+          <p className="text-center text-sm text-white md:text-left">
             &copy; {new Date().getFullYear()} Kismet Finance. All rights
             reserved.
-=======
-          <p className="text-center text-sm text-white md:text-left">
-            &copy; {new Date().getFullYear()} Kismet Finance. All rights reserved.
->>>>>>> 04983d8 (Initial commit with updated logo and layout redesign)
           </p>
         </div>
       </div>
