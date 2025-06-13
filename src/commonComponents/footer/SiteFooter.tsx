@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function SiteFooter() {
   const disclaimer =
     "Kismet Finance Group connects Australians with licensed professionals tailored to their needs. We do not provide financial, legal, or tax services directly. Our Service is referral-based, and we do not charge clients. We encourage clients to seek professional guidance before making financial decisions.";
-  return (
+return (
     <div className="w-full bg-primary">
       <div className="page-container flex flex-col items-center py-12 md:flex-row">
         <Image
@@ -21,7 +21,7 @@ export default function SiteFooter() {
               <p className="mb-2 text-center text-lg font-semibold tracking-tight text-white md:text-left">
                 Contact us
               </p>
-              <div className="mx-auto flex flex flex-1 flex-col gap-2 md:flex-row md:gap-4">
+              <div className="mx-auto flex flex-1 flex-col gap-2 md:flex-row md:gap-4">
                 {contact.map((item, idx) => (
                   <Link
                     href={"/"}

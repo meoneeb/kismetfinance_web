@@ -6,7 +6,7 @@ import MissionVisionSection from "./MissionVisionSection";
 export default function AboutPage() {
   return (
     <>
-      <PageHeroSection
+    <PageHeroSection
         title="About us"
         imgUrl="https://i.ibb.co/Mkqj2b6t/DSC01638.jpg"
       />
