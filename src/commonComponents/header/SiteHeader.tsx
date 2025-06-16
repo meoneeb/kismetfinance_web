@@ -35,7 +35,7 @@ export default function SiteHeader() {
               alt={options.siteName}
               height={60}
               width={120}
-              className="h-full w-auto"
+              className="h-full w-auto max-w-[120px]"
             />
           </Link>
 
