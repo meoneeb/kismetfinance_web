@@ -59,64 +59,35 @@ export default function ServicesSection(): JSX.Element {
 
   return (
     <div className="w-full bg-zinc-100">
-      <div className="page-container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        {/* First row: 3 cards */}
-        <div className="mb-12 flex flex-wrap justify-center gap-x-8 gap-y-12">
-          {services.slice(0, 3).map((service, idx) => (
+      <div className="page-container py-12">
+        <div className="mb-12 flex flex-wrap justify-center">
+          {services.map((service, idx) => (
             <div
               key={idx}
-              className="flex w-full flex-col overflow-hidden rounded-md bg-primary shadow-lg sm:w-[30%]"
+              className="mb-8 flex w-full md:w-1/2 md:px-4 lg:w-1/3"
             >
-              <img
-                src={service.img}
-                alt={service.title}
-                className="mb-4 w-full rounded-t-md object-cover"
-                style={{ maxHeight: "200px" }}
-              />
-              <div className="flex flex-grow flex-col justify-between p-6">
-                <h3 className="mb-4 text-center text-lg font-semibold text-secondary sm:text-xl">
-                  {service.title}
-                </h3>
-                <p className="mb-6 text-center text-sm leading-relaxed text-white sm:text-base">
-                  {service.desc}
-                </p>
-                <button
-                  onClick={() => openIframe(service.iframeSrc)}
-                  className="mx-auto rounded border border-secondary px-8 py-1.5 text-sm font-medium text-secondary transition-colors duration-300 hover:bg-secondary hover:text-white"
-                >
-                  Learn More
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Second row: 2 cards centered */}
-        <div className="flex flex-wrap justify-center gap-x-8">
-          {services.slice(3, 5).map((service, idx) => (
-            <div
-              key={idx}
-              className="mb-8 flex w-full flex-col overflow-hidden rounded-md bg-primary shadow-lg sm:mb-0 sm:w-[40%]"
-            >
-              <img
-                src={service.img}
-                alt={service.title}
-                className="mb-4 w-full rounded-t-md object-cover"
-                style={{ maxHeight: "200px" }}
-              />
-              <div className="flex flex-grow flex-col justify-between p-6">
-                <h3 className="mb-4 text-center text-lg font-semibold text-secondary sm:text-xl">
-                  {service.title}
-                </h3>
-                <p className="mb-6 text-center text-sm leading-relaxed text-white sm:text-base">
-                  {service.desc}
-                </p>
-                <button
-                  onClick={() => openIframe(service.iframeSrc)}
-                  className="mx-auto rounded border border-secondary px-8 py-1.5 text-sm font-medium text-secondary transition-colors duration-300 hover:bg-secondary hover:text-white"
-                >
-                  Learn More
-                </button>
+              <div className="flex w-full flex-col overflow-hidden rounded-md bg-primary shadow-lg ">
+                <img
+                  src={service.img}
+                  alt={service.title}
+                  className="mb-4 w-full rounded-t-md object-cover"
+                  style={{ maxHeight: "200px" }}
+                />
+                <div className="flex flex-grow flex-col justify-between p-6">
+                  <h3 className="mb-4 text-center text-lg font-semibold text-secondary sm:text-xl">
+                    {service.title}
+                  </h3>
+                  <hr className="mx-auto mb-4 w-1/3 border border-secondary" />
+                  <p className="mb-6 text-center text-sm leading-relaxed text-white sm:text-base">
+                    {service.desc}
+                  </p>
+                  <button
+                    onClick={() => openIframe(service.iframeSrc)}
+                    className="mx-auto rounded border border-secondary px-8 py-1.5 text-sm font-medium text-secondary transition-colors duration-300 hover:bg-secondary hover:text-white"
+                  >
+                    Learn More
+                  </button>
+                </div>
               </div>
             </div>
           ))}

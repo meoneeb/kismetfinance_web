@@ -11,9 +11,12 @@ take the next step with confidence.`;
       <section className="w-full bg-white">
         <div className="page-container flex flex-col-reverse items-center gap-12 py-16 md:flex-row md:gap-20 md:py-24">
           {/* Left side: Single large image */}
-          <div className="w-full overflow-hidden rounded-xl shadow-xl transition-shadow duration-300 hover:shadow-2xl md:w-1/2">
+          {/* <div className="w-full overflow-hidden rounded-xl shadow-xl transition-shadow duration-300 hover:shadow-2xl md:w-1/2">
+           
+          </div> */}
+          <div className="w-full overflow-hidden md:w-1/2">
             <img
-              src="https://i.ibb.co/Q7jx9DVB/DSC01518.jpg"
+              src="/images/kfg-about.png"
               alt="Finance professional"
               className="h-auto w-full object-cover"
               loading="lazy"
@@ -49,3 +52,48 @@ take the next step with confidence.`;
     </>
   );
 }
+
+interface MaskedImageProps {
+  imageUrl: string;
+  width?: number;
+  height?: number;
+}
+
+const MaskedImage: React.FC<MaskedImageProps> = ({
+  imageUrl,
+  width = 200,
+  height = 200,
+}) => {
+  return (
+    <div style={{ width, height }}>
+      <svg
+        viewBox={`0 0 ${width} ${height}`}
+        width={width}
+        height={height}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <mask id="customMask">
+            <path d="M0 800H260V0H0V800Z" fill="#D9D9D9" />
+            <path d="M280 880H540V80H280V880Z" fill="#D9D9D9" />
+            <path d="M560 840H820V40H560V840Z" fill="#D9D9D9" />
+          </mask>
+        </defs>
+
+        <image
+          x="0"
+          y="0"
+          width={width}
+          height={height}
+          href={imageUrl}
+          mask="url(#customMask)"
+          preserveAspectRatio="xMidYMid slice"
+        />
+      </svg>
+    </div>
+  );
+};
+
+// <svg width="820" height="880" viewBox="0 0 820 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+// </svg>
