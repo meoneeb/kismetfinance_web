@@ -40,6 +40,8 @@ export default function MissionVisionSection() {
         }`}
       >
         <h2 className="mb-6 font-bold text-secondary">{title}</h2>
+        <hr className="mb-4 w-1/3 border border-secondary" />
+
         <p className="text-lg leading-relaxed text-white">{text}</p>
       </div>
     </div>

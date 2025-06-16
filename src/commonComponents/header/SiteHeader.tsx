@@ -23,7 +23,7 @@ export default function SiteHeader() {
     <>
       {/* Header */}
       <header
-        className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 ${
+        className={`fixed left-0 top-0 z-50 w-full transition-all duration-300 ${
           scrolled ? "bg-primary" : "bg-primary/95"
         }`}
       >
@@ -31,11 +31,11 @@ export default function SiteHeader() {
           {/* Logo */}
           <Link href="/" passHref>
             <Image
-              src={options.siteLogoSquare}  // <- you can switch to `options.siteLogo` if preferred
+              src={options.siteLogoSquare} // <- you can switch to `options.siteLogo` if preferred
               alt={options.siteName}
               height={60}
-              width={180}
-              className="h-auto w-[130px]"  // <- change width if needed
+              width={120}
+              className="h-auto w-auto"
             />
           </Link>
 
@@ -69,12 +69,21 @@ export default function SiteHeader() {
 
       {/* Slide-in Mobile Menu */}
       <aside
-        className={`fixed top-0 left-0 z-50 h-full w-[80%] max-w-sm transform bg-primary text-white transition-transform duration-300 ${
+        className={`fixed left-0 top-0 z-50 h-full w-[80%] max-w-sm transform bg-primary text-white transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <div className="flex items-center justify-between p-4">
-          <span className="text-lg font-semibold">{options.siteName}</span>
+          {/* Logo */}
+          <Link href="/" passHref>
+            <Image
+              src={options.siteLogoSquare} // <- you can switch to `options.siteLogo` if preferred
+              alt={options.siteName}
+              height={60}
+              width={120}
+              className="h-auto w-auto"
+            />
+          </Link>
           <button onClick={() => setIsOpen(false)} aria-label="Close menu">
             <FontAwesomeIcon icon={faX} className="text-xl" />
           </button>
