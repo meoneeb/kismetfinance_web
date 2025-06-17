@@ -33,9 +33,12 @@ take the next step with confidence.`;
       </section>
 
       {/* Colored background section */}
-      <section className="w-full bg-primary">
+      <section
+        className="min-h-[60vh] w-full bg-primary bg-cover bg-left bg-no-repeat md:bg-contain md:bg-right"
+        style={{ backgroundImage: "url('/images/img.jpg')" }}
+      >
         <div className="page-container py-24 text-center md:text-left">
-          <h2 className="mx-auto max-w-3xl text-2xl font-semibold leading-snug tracking-wide text-white md:mx-0 md:text-3xl">
+          <h2 className="mx-auto max-w-2xl text-2xl font-semibold leading-snug tracking-wide text-white md:mx-0 md:text-3xl">
             We specialize in aligning individuals with vetted professionals who
             can offer support tailored to their needs. Every connection is made
             with care, ensuring you are introduced to the right people to
