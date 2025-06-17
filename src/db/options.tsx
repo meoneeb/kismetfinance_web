@@ -1,5 +1,5 @@
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faMapMarker, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faMapMarker, faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export const options = {
   siteName: "Kismet Financials",
@@ -10,7 +10,7 @@ export const options = {
 export const socialMediaLinks = [
   {
     name: "facebook",
-    icon: faFacebook,
+    icon: faFacebookF,
     href: "#",
   },
   {
@@ -28,7 +28,7 @@ export const contact = [
   },
   {
     name: "Address",
-    icon: faMapMarker,
+    icon: faMapMarkerAlt,
     value: (
       <>
         52 Cooper Road

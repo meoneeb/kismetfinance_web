@@ -4,7 +4,7 @@ export default function ApproachSection() {
     <div className="w-full bg-white">
       <div className="page-container py-12">
         <h2 className="mb-4 text-center text-primary">Our Approach</h2>
-        <p className="mx-auto max-w-5xl text-center text-gray-600 text-lg">{intro}</p>
+        <p className="mx-auto text-center text-gray-600 text-lg">{intro}</p>
       </div>
     </div>
   );

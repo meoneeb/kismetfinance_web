@@ -23,8 +23,8 @@ export default function SiteHeader() {
     <>
       {/* Header */}
       <header
-        className={`fixed left-0 top-0 z-50 w-full transition-all duration-300 ${
-          scrolled ? "bg-primary" : "bg-primary/95"
+        className={`fixed left-0 top-0 z-50 w-full transition-all duration-300  ${
+          scrolled ? "bg-primary" : "bg-primary/95 bg-blend-multiply"
         }`}
       >
         <div className="page-container flex h-20 items-center justify-between">

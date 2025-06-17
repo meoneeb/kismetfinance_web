@@ -13,7 +13,7 @@ html {
 }
 
 div.page-container {
-  @apply mx-auto w-full max-w-7xl px-4 md:px-6;
+  @apply mx-auto w-full px-4 md:px-6;
 }
 
 h1 {
@@ -24,7 +24,8 @@ h1 {
 h2 {
   @apply text-3xl font-bold tracking-tight md:text-5xl;
   font-family: "DM Serif Display", serif;
-  font-style: normal;
+  font-style: light;
+  font-weight: 700;
 }
 h3 {
   @apply text-2xl font-semibold md:text-3xl;

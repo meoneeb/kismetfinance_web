@@ -66,7 +66,7 @@ export default function ServicesSection(): JSX.Element {
               key={idx}
               className="mb-8 flex w-full md:w-1/2 md:px-4 lg:w-1/3"
             >
-              <div className="flex w-full flex-col overflow-hidden rounded-md bg-primary shadow-lg ">
+              <div className="flex w-full flex-col overflow-hidden bg-primary shadow-lg ">
                 <img
                   src={service.img}
                   alt={service.title}
@@ -83,7 +83,7 @@ export default function ServicesSection(): JSX.Element {
                   </p>
                   <button
                     onClick={() => openIframe(service.iframeSrc)}
-                    className="mx-auto rounded border border-secondary px-8 py-1.5 text-sm font-medium text-secondary transition-colors duration-300 hover:bg-secondary hover:text-white"
+                    className="mx-auto border border-secondary px-8 py-1.5 text-sm font-medium text-secondary transition-colors duration-300 hover:bg-secondary hover:text-white"
                   >
                     Learn More
                   </button>

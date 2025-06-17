@@ -102,28 +102,29 @@ export default function ReviewsSection() {
   };
 
   return (
-    <section className="w-full bg-zinc-100 py-16">
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="mb-12 text-center text-3xl font-semibold text-primary sm:text-4xl">
-          Client Testimonials
-        </h2>
+   <section className="w-full bg-zinc-100 py-16">
+  <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <h2 className="mb-12 text-center text-3xl font-semibold text-primary sm:text-4xl">
+      Client Testimonials
+    </h2>
 
-        <Slider {...settings} className="relative">
-          {reviews.map((review, idx) => (
-            <article key={idx} className="px-2">
-              <div className="flex flex-col border-2 border-secondary bg-white p-6 shadow-md">
-                <h4 className="mb-1 text-center text-lg font-semibold text-secondary">
-                  {review.name}
-                </h4>
-                <StarRating rating={review.rating} />
-                <p className="text-left text-sm leading-relaxed text-primary">
-                  {review.text}
-                </p>
-              </div>
-            </article>
-          ))}
-        </Slider>
-      </div>
-    </section>
+    <Slider {...settings}>
+      {reviews.map((review, idx) => (
+        <div key={idx} className="px-2">
+          <div className="min-h-[400px] h-full flex flex-col justify-start border-2 border-secondary bg-white p-6 shadow-md">
+            <h4 className="mb-1 text-center text-lg font-semibold text-secondary">
+              {review.name}
+            </h4>
+            <StarRating rating={review.rating} />
+            <p className="text-left text-sm leading-relaxed text-primary">
+              {review.text}
+            </p>
+          </div>
+        </div>
+      ))}
+    </Slider>
+  </div>
+</section>
+
   );
 }
