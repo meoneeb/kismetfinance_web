@@ -65,7 +65,7 @@ export default function ProcessSection() {
               }`}
             >
               <Icon className="mb-4 w-24 text-secondary md:w-40" />
-              <hr className="mb-4 w-16 border border-secondary md:my-auto md:rotate-90" />
+              <hr className="mb-4 w-40 border border-gray-400 md:my-auto md:rotate-90" />
               <div>
                 <h3 className="mb-2 font-semibold text-secondary">{title}</h3>
                 <p className="text-sm leading-relaxed sm:text-base">{desc}</p>

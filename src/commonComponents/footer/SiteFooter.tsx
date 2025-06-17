@@ -27,10 +27,12 @@ export default function SiteFooter() {
               <div className="mx-auto flex w-fit flex-col gap-2 md:flex-row md:gap-4">
                 {contact.map((item, idx) => (
                   <Link href="/" key={idx} className="flex w-fit gap-2">
-                    <FontAwesomeIcon
-                      icon={item.icon}
-                      className="mt-1 text-secondary"
-                    />
+                    <div className="flex aspect-square h-10 w-10 items-center justify-center rounded-full bg-white">
+                      <FontAwesomeIcon
+                        icon={item.icon}
+                        className="text-xl text-primary"
+                      />
+                    </div>
                     <p className="font-medium text-white">{item.value}</p>
                   </Link>
                 ))}
@@ -47,10 +49,14 @@ export default function SiteFooter() {
           </p>
           <div className="flex items-center gap-2">
             {socialMediaLinks.map((item, idx) => (
-              <Link href={item.href} key={idx}>
+              <Link
+                href={item.href}
+                key={idx}
+                className="flex aspect-square h-10 w-10 items-center justify-center rounded-full bg-white"
+              >
                 <FontAwesomeIcon
                   icon={item.icon}
-                  className="text-2xl text-secondary"
+                  className="text-xl text-primary"
                 />
               </Link>
             ))}
