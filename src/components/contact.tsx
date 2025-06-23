@@ -104,7 +104,7 @@ export const Contact = () => {
                 htmlFor="first-name"
                 className="block text-sm font-medium text-gray-600"
               >
-                First name
+                First nameee
               </label>
               <div className="mt-1">
                 <input
@@ -121,7 +121,7 @@ export const Contact = () => {
                 htmlFor="last-name"
                 className="block text-sm font-medium text-gray-600"
               >
-                Last name
+                Last nameeee
               </label>
               <div className="mt-1">
                 <input
@@ -203,7 +203,7 @@ export const Contact = () => {
                 htmlFor="message"
                 className="block text-sm font-medium text-gray-600"
               >
-                Message
+                Messageeee
               </label>
               <div className="mt-1">
                 <textarea
