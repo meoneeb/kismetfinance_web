@@ -19,7 +19,7 @@ export default function ContactForm() {
               type="text"
               className="style-input"
               autoComplete="given-name"
-              placeholder="Enter your first name"
+              placeholder="Enter your first nameee"
             />
           </Field>
           <Field>
@@ -47,7 +47,7 @@ export default function ContactForm() {
               type="email"
               className="style-input"
               autoComplete="email"
-              placeholder="Enter your email"
+              placeholder="Enter your emailll"
             />
           </Field>
           <Field>
@@ -60,7 +60,7 @@ export default function ContactForm() {
               type="tel"
               autoComplete="tel"
               className="style-input"
-              placeholder="Enter your phone number"
+              placeholder="Enter your phone numberrr"
             />
           </Field>
         </div>
