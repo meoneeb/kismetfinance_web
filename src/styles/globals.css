@@ -5,6 +5,16 @@
 /* edit */
 /* @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap"); */
 
+@font-face {
+  font-family: "Berlingske Serif";
+  src: local("Berlingske Serif SemiBold"), local("Berlingske-Serif-SemiBold"),
+    url("BerlingskeSerif-SemiBold.woff2") format("woff2"),
+    url("BerlingskeSerif-SemiBold.woff") format("woff"),
+    url("BerlingskeSerif-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
 html {
   font-family: "Montserrat", "DM Sans", sans-serif;
   font-optical-sizing: auto;
@@ -18,18 +28,18 @@ div.page-container {
 
 h1 {
   @apply text-4xl font-bold tracking-tight md:text-6xl;
-  font-family: "DM Serif Display", serif;
+  font-family: "Berlingske Serif", serif;
   font-style: normal;
 }
 h2 {
   @apply text-3xl font-bold tracking-tight md:text-5xl;
-  font-family: "DM Serif Display", serif;
+  font-family: "Berlingske Serif", serif;
   font-style: light;
   font-weight: 700;
 }
 h3 {
   @apply text-2xl font-semibold md:text-3xl;
-  font-family: "DM Serif Display", serif;
+  font-family: "Berlingske Serif", serif;
   font-style: normal;
 }
 
