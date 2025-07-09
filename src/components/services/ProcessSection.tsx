@@ -49,10 +49,8 @@ export default function ProcessSection() {
           {processOverview.map(({ title, desc, Icon, isReverse }, idx) => (
             <div
               key={idx}
-              className={`flex justify-start p-8 md:items-center ${
-                isReverse
-                  ? "flex-col md:flex-row-reverse"
-                  : "flex-col md:flex-row"
+              className={`flex flex-col justify-start p-8 md:items-center ${
+                isReverse ? "md:flex-row-reverse" : "md:flex-row"
               }`}
             >
               {/* <Icon className="mb-4 w-24 text-secondary md:w-40" /> */}
@@ -64,7 +62,11 @@ export default function ProcessSection() {
                 className="fill-secondary"
               />
               <div className="mx-6 hidden h-[128px] w-0 border border-gray-400 md:block"></div>
-              <div className="">
+              <div
+                className={`flex flex-col ${
+                  isReverse ? "text-right" : "text-left"
+                }`}
+              >
                 <h3 className="mb-2 font-semibold text-secondary">{title}</h3>
                 <p className="text-sm leading-relaxed sm:text-base">{desc}</p>
               </div>

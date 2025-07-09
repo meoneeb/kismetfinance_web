@@ -35,13 +35,9 @@ export default function MissionVisionSection() {
 
       {/* Text side */}
       <div
-        className={`flex w-full flex-col items-center justify-center bg-primary px-6 py-8 md:w-1/2 md:px-12 ${
-          reverse ? "lg:pl-32" : "lg:pr-32"
-        }`}
+        className={`flex w-full flex-col items-center justify-center bg-primary px-6 py-8 md:w-1/2 md:px-24`}
       >
-        <h2 className="mb-4 font-bold text-secondary">{title}</h2>
-        <hr className="mb-4 w-12 border-spacing-0.5 border-secondary" />
-
+        <h2 className="mb-4 font-bold text-secondary underline-60">{title}</h2>
         <p className="text-lg leading-relaxed text-white">{text}</p>
       </div>
     </div>

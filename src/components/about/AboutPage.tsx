@@ -8,7 +8,7 @@ export default function AboutPage() {
     <>
       <PageHeroSection
         title="About us"
-        imgUrl="https://i.ibb.co/Mkqj2b6t/DSC01638.jpg"
+        imgUrl="/images/about.jpg"
       />
       <IntroSection />
       <MissionVisionSection />

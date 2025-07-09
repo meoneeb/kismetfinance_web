@@ -11,7 +11,7 @@ export default function PageHeroSection({
 }: PageHeroSectionProps) {
   return (
     <div
-      className="relative h-[90vh] w-full bg-cover bg-no-repeat pt-32"
+      className="relative h-screen w-full bg-cover bg-no-repeat pt-32"
       style={{
         backgroundImage: `url(${imgUrl})`,
         backgroundPosition: "center top",

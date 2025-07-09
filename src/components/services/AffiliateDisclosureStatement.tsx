@@ -1,6 +1,6 @@
 export default function AffiliateDisclosureStatement() {
   return (
-    <div className="mx-auto mt-12 w-full border-2 border-secondary p-6">
+    <div className="mx-auto mt-12 w-full max-w-7xl border-2 border-secondary p-6">
       <h3 className="mb-4 text-center font-semibold  text-primary">
         Affiliate Disclosure Statement
       </h3>
