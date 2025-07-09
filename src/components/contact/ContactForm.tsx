@@ -1,5 +1,3 @@
-import { Field, Input, Label, Switch, Textarea } from "@headlessui/react";
-import Link from "next/link";
 import { useState } from "react";
 
 export default function ContactForm() {
@@ -10,7 +8,7 @@ export default function ContactForm() {
       <iframe
         aria-label="Contact Us"
         frameBorder="0"
-        style={{ height: "1080px", width: "100%", border: "none" }}
+        style={{ height: "900px", width: "100%", border: "none" }}
         src="https://forms.zohopublic.com.au/kismetfinancegroup1/form/ContactUs/formperma/v__eca-m_N0ItXlPSYZHebm5IAovJav3E4E8Jndu7fA"
       ></iframe>
     </div>

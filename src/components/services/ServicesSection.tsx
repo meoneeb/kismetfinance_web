@@ -60,20 +60,17 @@ export default function ServicesSection(): JSX.Element {
   return (
     <div className="w-full bg-zinc-100">
       <div className="page-container py-12">
-        <div className="mb-12 flex flex-wrap justify-center">
+        <div className="mb-12 flex flex-wrap justify-center gap-6 md:gap-12 lg:gap-20">
           {services.map((service, idx) => (
-            <div
-              key={idx}
-              className="mb-8 flex w-full md:w-1/2 md:px-4 lg:w-1/3"
-            >
-              <div className="flex w-full flex-col overflow-hidden bg-primary shadow-lg ">
+            <div key={idx} className=" flex w-full max-w-sm">
+              <div className="flex w-full flex-col overflow-hidden shadow-lg">
                 <img
                   src={service.img}
                   alt={service.title}
-                  className="mb-4 w-full rounded-t-md object-cover"
+                  className="mb-2 w-full object-cover"
                   style={{ maxHeight: "200px" }}
                 />
-                <div className="flex flex-grow flex-col justify-between p-6">
+                <div className="flex flex-grow flex-col justify-between bg-primary p-6">
                   <h3 className="mb-4 text-center text-lg font-semibold text-secondary sm:text-xl">
                     {service.title}
                   </h3>
