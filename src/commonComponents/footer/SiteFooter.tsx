@@ -8,7 +8,7 @@ export default function SiteFooter() {
     "Kismet Finance Group connects Australians with licensed professionals tailored to their needs. We do not provide financial, legal, or tax services directly. Our Service is referral-based, and we do not charge clients. We encourage clients to seek professional guidance before making financial decisions.";
   return (
     <div className="w-full bg-primary">
-      <div className="page-container flex flex-col items-end py-6 md:flex-row md:gap-8">
+      <div className="page-container flex flex-col items-end justify-center pb-6 pt-12 md:flex-row">
         <div className="flex w-full items-center justify-center md:w-1/5">
           <Image
             src={options.siteLogoSquare}
@@ -17,16 +17,19 @@ export default function SiteFooter() {
             alt={options.siteName}
           />
         </div>
-        <div className="flex w-full flex-col items-center justify-center  md:w-3/5">
-          <div className="mb-6 flex w-full flex-col gap-6  md:flex-row">
-            <div className="w-full">
-              <p className="mb-4 text-center text-3xl font-semibold tracking-tight text-white">
-                Contact us
+        <div className="flex w-full flex-col items-center justify-center md:w-3/5 lg:w-2/5">
+          <div className="mb-6 flex w-full flex-col gap-6 md:flex-row">
+            <div className="flex w-full flex-col items-center gap-8">
+              <p className="underline-60 mb-4 w-fit text-center text-3xl font-semibold tracking-tight text-white">
+                Contact
               </p>
-
-              <div className="mx-auto flex w-fit flex-col gap-2 md:flex-row md:gap-4">
+              <div className="mx-auto flex w-full flex-col justify-between gap-2 md:flex-row md:gap-4">
                 {contact.map((item, idx) => (
-                  <Link href="/" key={idx} className="flex w-fit gap-2">
+                  <Link
+                    href="/"
+                    key={idx}
+                    className="flex w-fit items-center gap-2"
+                  >
                     <div className="flex aspect-square h-10 w-10 items-center justify-center rounded-full bg-white">
                       <FontAwesomeIcon
                         icon={item.icon}
@@ -47,7 +50,7 @@ export default function SiteFooter() {
           <p className="mb-2 text-lg font-semibold tracking-tight text-white">
             Follow us
           </p>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-6">
             {socialMediaLinks.map((item, idx) => (
               <Link
                 href={item.href}

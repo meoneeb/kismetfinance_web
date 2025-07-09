@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        home: "url('https://img.freepik.com/free-photo/shanghai-skyline-sunny-day-china_1127-3129.jpg?t=st=1748529710~exp=1748533310~hmac=1fda26f6c84f64298d0e56150c93ed10039fc0a0f87f21bb2f27cfe51b6d258a&w=1380')",
+        home: "url('/images/midsection-colleagues-shaking-hands-office.jpg')",
       },
       colors: {
         primary: "#1E3A5F", // "#2779c8",

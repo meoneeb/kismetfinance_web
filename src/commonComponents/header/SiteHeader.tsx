@@ -6,11 +6,14 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { menu, options } from "../../db/options";
+import { usePathname } from "next/navigation";
 
 export default function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
+  console.log(pathname);
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 30);
@@ -42,7 +45,14 @@ export default function SiteHeader() {
           {/* Desktop Menu */}
           <nav className="hidden items-center gap-6 md:flex">
             {menu.map((item, idx) => (
-              <Link href={item.href} key={idx} className="text-white" passHref>
+              <Link
+                href={item.href}
+                key={idx}
+                className={`font-medium uppercase ${
+                  pathname === item.href ? "text-secondary" : "text-white"
+                }`}
+                passHref
+              >
                 {item.name}
               </Link>
             ))}
