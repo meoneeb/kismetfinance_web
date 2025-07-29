@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        home: "url('/images/midsection-colleagues-shaking-hands-office.jpg')",
+        home: "url('/images/midsection-colleagues-shaking-hands-office.webp')",
       },
       colors: {
         primary: "#1E3A5F", // "#2779c8",
